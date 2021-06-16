@@ -1,4 +1,4 @@
-
+/* 
 function minhaFuncao(variavel) {
 	return variavel * 5
 }
@@ -113,3 +113,12 @@ console.log('Multiplicação:', multiplicarDoisNumeros())
 console.log('Divisão:', divisaoDoisNumeros()) */
 
 
+ const pokemons = [
+     {nome: 'Bulbasaur', tipo: 'Grama'},
+     {nome: 'Charmander', tipo: 'Fogo'},
+     {nome: 'Squirtle', tipo: 'Água'},
+ ]
+
+ for (const pkmn of pokemons) {
+     console.log(`${pkmn.nome} é de ${pkmn.tipo}`)
+ }
