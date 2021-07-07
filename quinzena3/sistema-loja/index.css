@@ -1,0 +1,46 @@
+.redes-sociais{
+    margin-left: 400px;
+}
+
+.inicial-centralizar{
+    
+}
+h1{
+    color: rgb(32, 32, 32);
+    background-color: rgb(168, 118, 60);
+    border: solid;
+}
+    
+p{
+    color: rgb(32, 32, 32);
+    background-color: rgb(168, 118, 60);
+    border: solid;
+}
+.redes-sociais img{
+        display: inline-block;
+        max-width:100px;
+        max-height:50px;
+        width: auto;
+        height: auto;
+        
+    
+}
+
+.menu-sheet{
+    margin-left: 280px;
+}
+.menu-sheet2{
+    margin-left: 280px;
+}
+.menu-sheet3{
+    margin-left: 280px;
+}
+.menu-sheet4{
+    margin-left: 280px;
+}
+
+h2{
+    color: rgb(32, 32, 32);
+    background-color: rgb(168, 118, 60);
+    border: solid;
+}
