@@ -1,0 +1,324 @@
+
+:root{
+    --black:#000000;
+    --gray:#acacac;
+    --gradient:linear-gradient(90deg, var(--black), var(--gray));
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background:var(--gray);
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background:#f0eeee;
+}
+
+section{
+    min-height: 100vh;
+    padding:0 9%;
+    /* padding-top: 7.5rem; */
+    padding-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    border-radius: 5rem;
+    background:var(--gradient);
+    font-size: 1.7rem;
+    color:#fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.heading{
+    text-align: center;
+    background:var(--gradient);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+}
+
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(/images/home-bg-img.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio .image img{
+    width: 18vw;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
+
+.inicio .conteudo h3{
+    font-size: 5.5rem;
+    color:#333;
+    text-transform: uppercase;
+}
+
+.inicio .conteudo h3 span{
+    color:var(--gray);
+    text-transform: uppercase;
+}
+
+.inicio .conteudo p{
+    font-size: 1.7rem;
+    color:#666;
+    padding:1rem 0;
+    text-transform: none;
+}
+
+
+.servicos .inputCaixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.servicos .inputCaixa .box{
+    flex:1 1 30rem;
+    background:#fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin:1.5rem;
+    padding:3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.servicos .inputCaixar .box img{
+    height: 15rem;
+}
+
+.servicos .inputCaixa .box h3{
+    font-size: 2rem;
+    color:#333;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-transform: none;
+}
+
+.servicos .inputCaixa .box p{
+    font-size: 1.3rem;
+    color:#666;
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+.tecnologia{
+    background:url(/images/bg-tecnologia-img.png) no-repeat;
+     background-size: cover;
+    /*background-position: center; */
+    padding-bottom: 4rem;
+}
+
+.tecnologia .column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tecnologia .column .image{
+    flex:1 1 30rem;
+}
+
+.tecnologia .column .image img{
+    width: 85%;
+    animation: float 3s linear infinite;
+}
+
+.tecnologia .column .conteudo{
+    flex:1 1 40rem;
+}
+
+.tecnologia .column .conteudo h3{
+    font-size: 3rem;
+    color:#666;
+    text-transform: none;
+}
+
+.tecnologia .column .conteudo p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:1rem 0;
+    text-transform: none;
+}
+
+.tecnologia .column .conteudo .buttons a:last-child{
+    margin-left: 2rem;
+}
+
+.faleConosco{
+    background:url(/images/bg-faleconosco-img.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+.faleConosco .image{
+    flex:1 1 40rem;
+}
+
+.faleConosco .image img{
+    width:100%;
+    padding:2rem;
+    margin-bottom:5rem ;
+}
+
+.faleConosco form{
+    flex:1 1 40rem;
+    padding:2rem 3rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background:#fff;
+}
+
+.faleConosco form .heading{
+    text-align: left;
+    padding:0;
+    padding-bottom: 2rem;
+}
+
+.faleConosco form .inputBox{
+    position: relative;
+}
+
+.faleConosco form .inputBox input, .contact form .inputBox textarea{
+    width:100%;
+    background:none;
+    color:#666;
+    margin:1.5rem 0;
+    padding:.5rem 0;
+    font-size: 1.7rem;
+    border-bottom: .1rem solid rgba(0,0,0,.1);
+    text-transform: none;
+}
+
+.faleConosco form .inputBox textarea{
+    resize: none;
+    height: 13rem;
+}
+
+.faleConosco form .inputBox label{
+    position: absolute;
+    top:1.7rem; left:0;
+    font-size: 1.7rem;
+    color:#666;
+    transition: .2s linear;
+    text-transform: none;
+
+}
+
+.faleConosco form .inputBox input:focus ~ label,
+.faleConosco form .inputBox input:valid ~ label,
+.faleConosco form .inputBox textarea:focus ~ label,
+.faleConosco form .inputBox textarea:valid ~ label{
+    top:-.5rem;
+    font-size: 1.5rem;
+    color:var(--gray);
+}
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:1200px){
+    
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:991px){
+    
+    section{
+        padding:0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+     
+    .inicio{
+        flex-flow: column-reverse;
+    }
+
+    .inicio .image img{
+        width:100%;
+    }
+
+    .inicio .conteudo h3{
+        font-size: 3.6rem;
+    }
+
+    .inicio .conteudo p{
+        font-size: 1.5rem;
+    }
+
+    .tecnologia{
+        background-position: right;
+    }
+
+   
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+   
+}
